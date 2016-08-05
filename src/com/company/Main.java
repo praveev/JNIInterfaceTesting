@@ -11,8 +11,11 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Main m = new Main();
-        long being = System.nanoTime();
-        m.sayHello();
-        System.out.println(System.nanoTime() - being);
+
+        for (int i = 0; i < 100; i++) {
+            long begin = System.nanoTime();
+            m.sayHello();
+            System.out.println(System.nanoTime() - begin);
+        }
     }
 }
